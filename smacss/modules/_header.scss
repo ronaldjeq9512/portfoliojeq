@@ -1,0 +1,18 @@
+.navigation {
+    padding: $space-base;
+    &__list{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $space-2;
+    }
+    &__item{
+        text-decoration: none;
+        color: $color-white;
+        font-weight: bold;
+        &--isActive{
+            color: $color-peru;
+        }
+    }
+}

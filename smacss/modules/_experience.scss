@@ -1,0 +1,31 @@
+.Experience {
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax($width-25, 1fr));
+        gap: $space-base;
+        margin-block: $space-base;
+        position: relative; 
+    }
+    &-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-aqua;
+        padding: $space-base;
+        border-radius: $width-base;
+        box-shadow: 0px 0px $width-base $color-shadow;
+        transition: transform 0.3s ease, z-index 0.3s ease;
+        z-index: 1;
+        &-job{
+            font-size: $font_medium;
+            margin-block: $space-base;
+            color: $color-light-green;
+            font-weight: bold;
+        }
+        &:hover {
+            transform: scale(1.2);
+            z-index: 10;
+        }
+    }
+}

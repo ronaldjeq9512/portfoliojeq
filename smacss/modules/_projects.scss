@@ -1,0 +1,35 @@
+.Projects{
+    &-article{
+        display: flex;
+        flex-direction: row;
+        gap: $space-2;
+        flex-wrap: wrap;
+        margin-block: $space-base;
+        &-description{
+            flex: 1;
+        }
+        &-title{
+            font-size: $font_large;
+            color: $color-light-green;
+            font-weight: bold;
+        }
+    }
+    &-figures{
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax($width-10, 1fr));
+        gap: $space-base;
+        margin-block: $space-base;
+        position: relative;
+        &-foto{
+            max-width: $width-12;
+            box-shadow: $width-zero $width-zero $width-base $color-gray-black;
+            transition: transform 0.3s ease, z-index 0.3s ease;
+            z-index: 1;
+            &:hover {
+                transform: scale(2);
+                z-index: 10;
+            }
+        }
+    }
+}

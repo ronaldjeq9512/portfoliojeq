@@ -3,101 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles..css">
+    <link rel="stylesheet" href="/styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#resumen">Resumen</a>
-            <a href="#aboutme">Sobre mí</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="contacto/contacto.html" target="_blank">Contactar</a>
+    <header class="navigation">
+        <nav class="navigation__list">
+            <a class="navigation__item  navigation__item--isActive" href="#resumen">Resumen</a>
+            <a class="navigation__item" href="#aboutme">Sobre mí</a>
+            <a class="navigation__item" href="#experiencia">Experiencia</a>
+            <a class="navigation__item" href="#proyectos">Proyectos</a>
+            <a class="navigation__item" href="contacto/contacto.html" target="_blank">Contactar</a>
         </nav>
     </header>
-    <body>
-        <section id="resumen">
-            <figure class="firstFigure">
-                <img class="firstFoto" src="images/foto1.jpeg" alt="icon">
+    <main class="principal-layout">
+        <section class="PrincipalContainer Resume" id="resumen">
+            <figure class="Resume-figure">
+                <img class="Resume-figure-foto" src="images/foto1.jpeg" alt="icon">
             </figure>
-            <article class="firstArticle">
+            <article class="Resume-article">
                 <h1>Hola, Soy Ronald</h1>
                 <br>
                 <p>Desarrollador Front-end. De Lima, Perú. Especializado en crear aplicaciones móviles</p>
             </article>           
         </section>
-        <section id="experiencia">
+        <section class="PrincipalContainer Experience" id="experiencia">
             <h1>Experiencia</h1>
-            <div class="secondContainer">
-                <article class="secondArticle">
+            <div class="Experience-container">
+                <article class="Experience-article">
                     <h2>Marzo 2022</h2>
-                    <h3>Software Engineer lll ~ Encora Inc. PE</h3>
+                    <h3 class="Experience-article-job">Software Engineer lll ~ Encora Inc. PE</h3>
                     <p>Responsable de la creación, mejora y soporte de aplicaciones móviles. Mejora importante en la experiencia de usuario. Formar parte de equipos de desarrollo para proyectos coworking y b2. Desplegar exitosamente aplicaciones a playstore y appstore. Fomentar el uso de buenas prácticas en el desarrollo del software</p>
                 </article>
-                <article class="secondArticle">
+                <article class="Experience-article">
                     <h2>Julio 2021</h2>
-                    <h3>Full-stack Developer ~ Directv PE</h3>
+                    <h3 class="Experience-article-job">Full-stack Developer ~ Directv PE</h3>
                     <p>Aumentar el número de usuarios que utilizan el aplicativo en un 2% mensual. Mejorar la experiencia al momento de contratar paquetes y promociones. Implementar pasarela de pago con lyra y mercadopago. Formar parte del equipo de mejora continua aportando ideas de solución. Implementar un chatbot virtual integrado al aplicativo móvil. Aumentar el número de transacciones por medio de la app en un 3% mensual.</p>
                 </article>
-                <article class="secondArticle">
+                <article class="Experience-article">
                     <h2>Octubre 2020</h2>
-                    <h3>Web Ui Developer ~ Globant PE</h3>
+                    <h3 class="Experience-article-job">Web Ui Developer ~ Globant PE</h3>
                     <p>Mejorar las funcionalidades de los aplicativos. Integrar storybook para previsualizar componentes. Participar en proyectos del sector entretenimiento. Integrar servicios de firebase.</p>
                 </article>
-                <article class="secondArticle">
+                <article class="Experience-article">
                     <h2>Octubre 2019</h2>
-                    <h3>Solution Asistant ~ NTT DATA PE</h3>
+                    <h3 class="Experience-article-job">Solution Asistant ~ NTT DATA PE</h3>
                     <p>Desarrollar y publicar aplicaciones con react-native, Android, Xamarin. Participar en proyectos de banca para múltiples funcionalidades. Liderar equipo de desarrollo para el sector servicios (luz). Participar en el proceso de publicación de aplicaciones a playstore y appstore</p>
                 </article>
-                <article class="secondArticle">
+                <article class="Experience-article">
                     <h2>Enero 2019</h2>
-                    <h3>Practicante profesional de Desarrollo ~ Semati PE</h3>
+                    <h3 class="Experience-article-job">Practicante profesional de Desarrollo ~ Semati PE</h3>
                     <p>Ser apoyo en el desarrollo de aplicaciones para el sector educativo. Desarrollar y brindar soporte a aplicativos móviles y web. Integrar un servicio de reportes con jaspersoft. Desarrollar servicios rest utilizando nodejs para sistemas de facturación y reportes. Integrar servicios de firebase como crashlytics, analytics, remote config.</p>
                 </article>
-                <article class="secondArticle">
+                <article class="Experience-article">
                     <h2>Mayo 2018</h2>
-                    <h3>Practicante pre-profesional de Desarrollo ~ Semati PE</h3>
+                    <h3 class="Experience-article-job">Practicante pre-profesional de Desarrollo ~ Semati PE</h3>
                     <p>Diseñar, desarrollar y brindar soporte a aplicaciones con react native node js y reactjs. Desarrollar más de 50 endpoints de Api rest y generar automáticamente documentación con swagger. Integrar servicios de notificación push con onesignal. Integrar servicios de envío de correos con mailgun.</p>
                 </article>
             </div>
         </section>
-        <section id="proyectos">
+        <section class="PrincipalContainer Projects" id="proyectos">
             <h1>Proyectos</h1>
-            <article class="thirdArticle">
-                <div class="thirdConteinerDescription">
-                    <h3 class="poryectTitle">Comunal</h3>
+            <article class="Projects-article">
+                <div class="Projects-article-description">
+                    <h3 class="Projects-article-title">Comunal</h3>
                     <p>Aplicación de coworking para alquiler de espacios de trabajo, parking, etc. Utilizando react-native, Hooks, analytics, aws cognito, styled components, vscode, axios, redux, typescript</p>
                 </div>
-                <figure class="thirdContainerFigures">
-                    <img class="thirdFoto" src="images/comunal/comunal1.webp" alt="icon">
-                    <img class="thirdFoto" src="images/comunal/comunal2.webp" alt="icon">
-                    <img class="thirdFoto" src="images/comunal/comunal3.webp" alt="icon">
-                    <img class="thirdFoto" src="images/comunal/comunal4.webp" alt="icon">
+                <figure class="Projects-figures">
+                    <img class="Projects-figures-foto" src="images/comunal/comunal1.webp" alt="icon">
+                    <img class="Projects-figures-foto" src="images/comunal/comunal2.webp" alt="icon">
+                    <img class="Projects-figures-foto" src="images/comunal/comunal3.webp" alt="icon">
+                    <img class="Projects-figures-foto" src="images/comunal/comunal4.webp" alt="icon">
                 </figure>
             </article>
         </section>
-<!--         <section>
-            <h1>Resumen</h1>
-            <div class="padre">
-                    <article class="hijo">
-                        <h2>2024</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia assumenda, obcaecati dolor ad possimus molestiae libero deleniti necessitatibus tenetur hic quo, cupiditate harum pariatur fugit exercitationem, voluptate quam in!</p>
-                    </article>
-                    <article class="hijo">
-                        <h2>2023</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia assumenda, obcaecati dolor ad possimus molestiae libero deleniti necessitatibus tenetur hic quo, cupiditate harum pariatur fugit exercitationem, voluptate quam in!</p>
-                    </article>
-                    <article class="hijo">
-                        <h2>2022</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia assumenda, obcaecati dolor ad possimus molestiae libero deleniti necessitatibus tenetur hic quo, cupiditate harum pariatur fugit exercitationem, voluptate quam in!</p>
-                    </article>
-                    <article class="hijo">
-                        <h2>2021</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia assumenda, obcaecati dolor ad possimus molestiae libero deleniti necessitatibus tenetur hic quo, cupiditate harum pariatur fugit exercitationem, voluptate quam in!</p>
-                    </article>
-            </div>
-        </section> -->
-    </body>
+    </main>
 </body>
 </html>
