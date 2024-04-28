@@ -17,6 +17,10 @@ principal-layout {
   padding: 20px;
 }
 
+contact-layout {
+  padding: 30px;
+}
+
 .navigation {
   padding: 10px;
 }
@@ -38,6 +42,12 @@ principal-layout {
 
 .PrincipalContainer {
   margin-block: 30px;
+}
+
+.containerInput {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .Experience-container {
@@ -132,6 +142,37 @@ principal-layout {
 .Projects-figures-foto:hover {
   transform: scale(2);
   z-index: 10;
+}
+
+.Contact {
+  margin-block: 10px;
+}
+.Contact-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 10px;
+}
+.Contact-form-label {
+  flex: 1;
+}
+.Contact-form-input {
+  flex: 1;
+}
+.Contact-figure-image {
+  width: 200px;
+  height: 200px;
+  border: 10px solid red;
+}
+.Contact-figure-image:hover {
+  transform: rotate(23deg);
 }
 
 .dissabled {

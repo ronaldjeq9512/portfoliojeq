@@ -1,3 +1,9 @@
 .PrincipalContainer {
     margin-block: $width-3;
 }
+
+.containerInput {
+    display: flex;
+    gap: $space-base;
+    flex-wrap: wrap;
+}
